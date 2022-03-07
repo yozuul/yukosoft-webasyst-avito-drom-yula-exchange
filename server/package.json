@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "pm2 start server.js --watch --node-args=\"--es-module-specifier-resolution=node\"",
+    "dev": "nodemon --config nodemon.json"
+  },
+  "dependencies": {
+    "ansicolor": "^1.1.95",
+    "axios": "^0.21.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http2-proxy": "^5.0.53",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.6.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "tedious": "^12.2.0",
+    "uuid": "^8.3.2"
+  },
+  "description": "Express JWT server",
+  "keywords": [
+    "express",
+    "posgres",
+    "jwt",
+    "sequelize",
+    "nodemailer"
+  ],
+  "author": "yozuul",
+  "license": "ISC"
+}
